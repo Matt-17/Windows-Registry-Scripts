@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Summary:
+; This registry file re-enables Bing search integration and Cortana's consent for web searches in Windows Search.
+; This allows web results to potentially appear in local search queries.
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search]
+"BingSearchEnabled"=dword:00000001
+"CortanaConsent"=dword:00000001
