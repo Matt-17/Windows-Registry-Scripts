@@ -1,8 +1,8 @@
+Windows Registry Editor Version 5.00
+
 ; Summary:
 ; This registry file configures settings for the Content Index service used by Windows Search.
 ; It modifies general settings for the indexing service and specific configurations for different languages.
-
-Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex]
 "MajorVersion"=dword:00000003

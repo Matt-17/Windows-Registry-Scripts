@@ -1,10 +1,10 @@
+Windows Registry Editor Version 5.00
+
 ; Summary:
 ; This registry file enables the "LocalAccountTokenFilterPolicy" setting in the Windows Registry.
 ; When set to '1', it allows networked (remote) access to shared folders, named pipes, and scheduled tasks 
 ; for local accounts, such as local administrators. This can be useful for administrative tasks in a 
 ; networked environment but may pose security risks if not managed properly.
-
-Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "LocalAccountTokenFilterPolicy"=dword:00000001

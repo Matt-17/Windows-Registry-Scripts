@@ -1,9 +1,9 @@
+Windows Registry Editor Version 5.00
+
 ; Summary:
 ; This registry file enables the "EnableLinkedConnections" setting in the Windows Registry.
 ; This allows elevated programs to recognize network drives mapped under a standard user.
 ; For more details, refer to Microsoft's official documentation or relevant support articles.
-
-Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
 "EnableLinkedConnections"=dword:00000001
