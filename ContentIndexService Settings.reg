@@ -1,0 +1,225 @@
+; Summary:
+; This registry file configures settings for the Content Index service used by Windows Search.
+; It modifies general settings for the indexing service and specific configurations for different languages.
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex]
+"MajorVersion"=dword:00000003
+"MinorVersion"=dword:00000001
+"ChangeNotificationInterval"=dword:0000000f
+"DaemonResponseTimeout"=dword:00000005
+"DelayUsnReadOnLowResource"=dword:00000001
+"FilterContents"=dword:00000001
+"FilterDirectories"=dword:00000000
+"FilterFilesWithUnknownExtensions"=dword:00000001
+"FilterIdleTimeout"=dword:000493e0
+"FilterDelayInterval"=dword:00000005
+"FilterRemainingThreshold"=dword:00000002
+"FilterRetries"=dword:00000004
+"DelayedFilterRetries"=dword:00000005
+"FilterRetryInterval"=dword:0000001e
+"ForcedNetPathScanInterval"=dword:00000078
+"IsEnumAllowed"=dword:00000001
+"IsapiMaxRecordsPerGetRows"=dword:0000000a
+"IsapiMaxRecordsInResultSet"=dword:00001388
+"IsapiQueryCachePurgeInterval"=dword:00000005
+"IsapiDateTimeFormatting"=dword:00000001
+"IsapiDateTimeLocal"=dword:00000000
+"ISAPIDefaultCatalogDirectory"="System"
+"LowResourceCheckInterval"=dword:0000003c
+"LowResourceSleep"=dword:000000b4
+"MasterMergeCheckpointInterval"=dword:00002000
+"MasterMergeTime"=dword:0000003c
+"MaxDefaultFilter"=dword:00000100
+"MaxFilesizeFiltered"=dword:00000100
+"MaxFilesizeMultiplier"=dword:00000008
+"MaxIdealIndexes"=dword:00000005
+"MaxIndexes"=dword:00000019
+"MaxMergeInterval"=dword:0000000a
+"MaxPendingDocuments"=dword:00000020
+"MaxQueueChunks"=dword:00000014
+"MaxQueryTimeslice"=dword:00000032
+"MaxShadowFreeForceMerge"=dword:000001f4
+"MaxShadowIndexSize"=dword:0000000f
+"MaxTextFilterBytes"=dword:017d7840
+"MaxWordlistSize"=dword:00000014
+"MinDiskFreeForceMerge"=dword:0000000f
+"MinMergeIdleTime"=dword:0000005a
+"MinSizeMergeWordlists"=dword:00000100
+"MinClientIdleTime"=dword:00000258
+"MinWordlistMemory"=dword:00000005
+"MinWordlistBattery"=dword:00000064
+"WordlistUserIdle"=dword:00000078
+"ThreadClassFilter"=dword:00000040
+"ThreadPriorityFilter"=dword:00000001
+"ThreadPriorityMerge"=dword:fffffffe
+"GenerateCharacterization"=dword:00000000
+"MaxCharacterization"=dword:00000140
+"EventLogFlags"=dword:00000002
+"CiCatalogFlags"=dword:00000000
+"IsAutoAlias"=dword:00000001
+"IsIndexingW3Svc"=dword:00000000
+"IsIndexingNNTPSvc"=dword:00000000
+"IsIndexingIMAPSvc"=dword:00000000
+"W3SvcInstance"=dword:00000001
+"NNTPSvcInstance"=dword:00000001
+"IMAPSvcInstance"=dword:00000001
+"RequestTimeout"=dword:00002710
+"StompLastAccessDelay"=dword:00000007
+"MinDiskSpaceToLeave"=dword:00000014
+"MaxUsnLogSize"=dword:00800000
+"UsnLogAllocationDelta"=dword:00100000
+"ScanBackoff"=dword:00000003
+"StartupDelay"=dword:00075300
+"MaxRunningWebhits"=dword:00000014
+"MaxWebhitsCpuTime"=dword:0000001e
+"WebhitsDisplayScript"=dword:00000001
+"MaxQueryExecutionTime"=dword:ffffffff
+"MaxWordlistIo"=dword:0000019a
+"MinIdleQueryThreads"=dword:00000001
+"MaxActiveQueryThreads"=dword:00000002
+"MaxFreshCount"=dword:00013880
+"PropertyStoreMappedCache"=dword:00000004
+"SecPropertyStoreMappedCache"=dword:00000004
+"IsapiRequestQueueSize"=dword:00000003
+"MinIdleRequestThreads"=dword:00000001
+"MaxActiveRequestThreads"=dword:00000002
+"MaxSimultaneousRequests"=dword:00000032
+"MaxCachedPipes"=dword:00000001
+"MaxWordLists"=dword:00000014
+"MinimizeWorkingSet"=dword:00000001
+"IsapiMaxEntriesInQueryCache"=dword:00000002
+"MaxRestrictionNodes"=dword:00040000
+"PropertyStoreBackupSize"=dword:00000400
+"SecPropertyStoreBackupSize"=dword:00000400
+"DLLsToRegister"=hex(7):43,00,3a,00,5c,00,57,00,49,00,4e,00,44,00,4f,00,57,00,\
+  53,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,71,00,75,\
+  00,65,00,72,00,79,00,2e,00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,\
+  49,00,4e,00,44,00,4f,00,57,00,53,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,\
+  00,33,00,32,00,5c,00,63,00,69,00,61,00,64,00,6d,00,69,00,6e,00,2e,00,64,00,\
+  6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,49,00,4e,00,44,00,4f,00,57,00,53,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,69,00,78,00,\
+  73,00,73,00,6f,00,2e,00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,49,\
+  00,4e,00,44,00,4f,00,57,00,53,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,\
+  33,00,32,00,5c,00,6e,00,6c,00,68,00,74,00,6d,00,6c,00,2e,00,64,00,6c,00,6c,\
+  00,00,00,43,00,3a,00,5c,00,57,00,49,00,4e,00,44,00,4f,00,57,00,53,00,5c,00,\
+  73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,6f,00,66,00,66,00,66,\
+  00,69,00,6c,00,74,00,2e,00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,\
+  49,00,4e,00,44,00,4f,00,57,00,53,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,\
+  00,33,00,32,00,5c,00,63,00,69,00,6f,00,64,00,6d,00,2e,00,64,00,6c,00,6c,00,\
+  00,00,43,00,3a,00,5c,00,57,00,49,00,4e,00,44,00,4f,00,57,00,53,00,5c,00,73,\
+  00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,69,00,6e,00,66,00,6f,00,\
+  73,00,6f,00,66,00,74,00,2e,00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,\
+  00,49,00,4e,00,44,00,4f,00,57,00,53,00,5c,00,73,00,79,00,73,00,74,00,65,00,\
+  6d,00,33,00,32,00,5c,00,6d,00,69,00,6d,00,65,00,66,00,69,00,6c,00,74,00,2e,\
+  00,64,00,6c,00,6c,00,00,00,43,00,3a,00,5c,00,57,00,49,00,4e,00,44,00,4f,00,\
+  57,00,53,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,4c,\
+  00,61,00,6e,00,67,00,57,00,72,00,62,00,6b,00,2e,00,64,00,6c,00,6c,00,00,00,\
+  00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Catalogs]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Catalogs\System]
+"Location"="C:\\System Volume Information"
+"IsIndexingW3Svc"=dword:00000000
+"IsIndexingNNTPSvc"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Catalogs\System\Scopes]
+"C:\\Dokumente und Einstellungen"=",,5"
+"C:\\"=",,5"
+"C:\\Dokumente und Einstellungen\\*\\Anwendungsdaten\\*"=",,4"
+"C:\\Dokumente und Einstellungen\\*\\Lokale Einstellungen\\*"=",,4"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language]
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\Dutch_Dutch]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000413
+"NoiseFile"="noise.nld"
+"StemmerClass"="{860d28d0-8bf4-11ce-be59-00aa0051fe20}"
+"WBreakerClass"="{66b37110-8bf2-11ce-be59-00aa0051fe20}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\English_UK]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000809
+"NoiseFile"="noise.eng"
+"StemmerClass"="{d99f7670-7f1a-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{80A3E9B0-A246-11D3-BB8C-0090272FA362}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\English_US]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000409
+"NoiseFile"="noise.enu"
+"StemmerClass"="{eeed4c20-7f1b-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{80A3E9B0-A246-11D3-BB8C-0090272FA362}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\French_French]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:0000040c
+"NoiseFile"="noise.fra"
+"StemmerClass"="{2a6eb050-7f1c-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{59e09848-8099-101b-8df3-00000b65c3b5}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\German_German]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000407
+"NoiseFile"="noise.deu"
+"StemmerClass"="{510a4910-7f1c-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{9b08e210-e51b-11cd-bc7f-00aa003db18e}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\Italian_Italian]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000410
+"NoiseFile"="noise.ita"
+"StemmerClass"="{6d36ce10-7f1c-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{fd86b5d0-12c6-11ce-bd31-00aa004bbb1f}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\Neutral]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000000
+"NoiseFile"="noise.dat"
+"StemmerClass"=""
+"WBreakerClass"="{369647e0-17b0-11ce-9950-00aa004bbb1f}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\Spanish_Modern]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:00000c0a
+"NoiseFile"="noise.esn"
+"StemmerClass"="{b0516ff0-7f1c-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{0285b5c0-12c7-11ce-bd31-00aa004bbb1f}"
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ContentIndex\Language\Swedish_Default]
+"ISAPIIDQErrorFile"="/iissamples/issamples/IDQError.htx"
+"ISAPIHTXErrorFile"="/iissamples/issamples/HTXError.htx"
+"ISAPIRestrictionErrorFile"="/iissamples/issamples/ResError.htx"
+"ISAPIDefaultErrorFile"="/iissamples/issamples/DefError.htx"
+"Locale"=dword:0000041d
+"NoiseFile"="noise.sve"
+"StemmerClass"="{9478f640-7f1c-11ce-be57-00aa0051fe20}"
+"WBreakerClass"="{01c6b350-12c7-11ce-bd31-00aa004bbb1f}"
+
